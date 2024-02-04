@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Letter</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #e74c3c;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #love-letter {
+            text-align: center;
+            max-width: 400px;
+            padding: 10px;
+            background-color: #424242;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(126, 62, 245, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        #message-box {
+            margin-bottom: 20px;
+            display: none;
+            transition: all 0.2s ease;
+        }
+
+        #heart-button {
+            cursor: pointer;
+            font-size: 24px;
+            color: #e74c3c;
+            transition: all 0.3s ease;
+        }
+
+        p {
+            color: antiquewhite;
+            margin-top: 0; 
+            text-align: left; 
+        }
+    </style>
+</head>
+<body>
+    <div id="love-letter">
+        <div id="message-box">
+            <p> Dear Love,
+                <br />
+                <br />
+                mahal na mahal kita kahit lagi tayo nag aaway ikaw padin pinaka mamahal ko sa lahat ikaw lang pipiliin ko palagi.mamahalin kita palagi tulad nung una kitang minahal.at tutuparin ko ung mga pangako ko sayo love mahal na mahal kita ikaw lang palagi kong gusto makausap makasama makayakap makiss makakulitan ikaw langmahal ko sabi ko nga pano kaya pag iniwan moko pano nako wag mo un gawin ah ikaw lang kaya love ko sa lahat ikaw inuuna ko mahal na mahal ita at sana maginh maayos natayo palagi.lagi mo tandaan na lagi ko lagi ko sinusunod mga utos mo na lagi kita niwawait ikaw lang ung babaeng mahal ko i love you so much baby labidadabs babe mahal cute mo
+            </p>
+        </div>
+        <div id="heart-button" onclick="showLove()">
+            ❤️
+        </div>
+    </div>
+
+    <script>
+        function showLove() {
+            var heartButton = document.getElementById('heart-button');
+            var messageBox = document.getElementById('message-box');
+
+            heartButton.style.transform = 'translateY(50px)';
+            messageBox.style.display = 'block';
+            messageBox.style.transform = 'translateY(50px)';
+        }
+    </script>
+</body>
+</html>
